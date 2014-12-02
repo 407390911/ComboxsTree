@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="CSS/TlComboxTree.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/TlComboxTree.js" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <input type="text" id="search">
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#txtProdGrp").ComboxTree({
+            url: "/ProGroup/GetProGroupTree"
+        });
+    });
+</script>
